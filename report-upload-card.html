@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантаження та обробка звіту</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <div class="upload-card">
+        <div class="card-header">
+            <h1 class="card-title">Завантаження звіту</h1>
+            <p class="card-subtitle">Обробка та аналіз ваших даних</p>
+        </div>
+
+        <!-- Початковий стан -->
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📄</div>
+            <div class="upload-text">Оберіть файл для аналізу</div>
+            <div class="upload-hint">Підтримуються формати: .xlsx, .csv</div>
+        </div>
+
+        <!-- Прогрес -->
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-info">
+                <span class="progress-status" id="progressStatus">Завантаження файлу...</span>
+                <span class="progress-percentage" id="progressPercentage">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Анімації обробки -->
+        <div class="animation-area" id="animationArea">
+            <div class="processing-icons">
+                <div class="icon icon-gear" id="iconGear">⚙️</div>
+                <div class="icon icon-chart" id="iconChart">📊</div>
+                <div class="icon icon-search" id="iconSearch">🔍</div>
+            </div>
+        </div>
+
+        <!-- Результат -->
+        <div class="result-area" id="resultArea">
+            <div class="lottie-container" id="lottieContainer"></div>
+            <div class="result-message" id="resultMessage">Звіт готовий!</div>
+            <button class="reset-button" id="resetButton">Завантажити новий файл</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
